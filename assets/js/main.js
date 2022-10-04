@@ -3,10 +3,13 @@ var swiper = new Swiper(".main__poster", {
     spaceBetween: 24,
     slidesPerView: 'auto',
     grabCursor: true,
+    parallax: true,
     autoplay: {
         delay: 7000,
+        disableOnInteraction: false,
+        pauseOnMouseEnter: true,
     },
-
+    speed: 1500,
     pagination: {
       el: ".swiper-pagination",
       dynamicBullets: true,
