@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Hari</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!--==================== SIDEBAR ====================-->
+        <aside class="sidebar">
+            <div class="logo">
+                <a href="#"><img src="assets/img/icon/logo.svg" alt=""></a>
+            </div>
+            <nav class="nav">
+                <ul class="nav-menu">
+                    <a href="#">
+                        <li class="nav-item active">
+                            <svg class="icon">
+                                <use xlink:href="assets/img/icon/icons.svg#home"></use>
+                            </svg>
+                            <span class="nav-text">Главная</span>
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li class="nav-item">
+                            <svg class="icon">
+                                <use xlink:href="assets/img/icon/icons.svg#journal"></use>
+                            </svg>
+                            <span class="nav-text">Мои записи</span>
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li class="nav-item">
+                            <svg class="icon">
+                                <use xlink:href="assets/img/icon/icons.svg#like"></use>
+                            </svg>
+                            <span class="nav-text">Избранное</span>
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li class="nav-item">
+                            <svg class="icon">
+                                <use xlink:href="assets/img/icon/icons.svg#settings"></use>
+                            </svg>
+                            <span class="nav-text">Настройки</span>
+                        </li>
+                    </a>
+                </ul>
+
+                <ul class="nav-menu">
+                    <a href="#" class="">
+                        <li class="nav-item log_out">
+                            <svg class="icon">
+                                <use xlink:href="assets/img/icon/icons.svg#log_out"></use>
+                            </svg>
+                            <span class="nav-text">Выйти</span>
+                        </li>
+                    </a>
+                </ul>
+
+            </nav>
+        </aside>
+
+        <!--==================== MAIN ====================-->
+        <main class="main">
+            <section class="main__content">
+                <div class="main__header">
+                    <div class="main__data">
+                        <h1 class="main__title">
+                            Привет, Друг!
+                        </h1>
+                        <p class="main__description">
+                            Welcome back and explore the world
+                        </p>
+                    </div>
+
+                    <div class="main__search">
+                        <form class="form__search">
+                            <button class="button__search" type="submit">
+                                <i class="ri-search-line"></i>
+                            </button>
+                            <input type="text" class="input__search" id="search" placeholder="Искать здесь...">
+                        </form>
+                    </div>
+
+                    <div class="main__notification">
+                        <button class="button__notific">
+                            <svg class="icon">
+                                <use xlink:href="assets/img/icon/icons.svg#notification"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <!--==================== Interest ====================-->
+                <section class="main__interest">
+                    <h1 class="interesting__title">
+                        Интересные места
+                    </h1>
+                    <div class="interesting__place">
+                        <article class="interesting__card">
+                            <img src="assets/img/bg_interest-1.jpg" alt="" class="card__img">
+
+                            <div class="card__about">
+                                <h1 class="card__title">
+                                    California
+                                </h1>
+
+                                <a href="#" class="location">
+                                    <i class="ri-map-pin-line"></i>
+
+                                    <h3 class="location__title">
+                                        United States
+                                    </h3>
+                                </a>
+                            </div>
+                        </article>
+
+                        <article class="interesting__card">
+                            <img src="assets/img/bg_interest-2.jpg" alt="" class="card__img">
+
+                            <div class="card__about">
+                                <h1 class="card__title">
+                                    Moscow
+                                </h1>
+
+                                <a href="#" class="location">
+                                    <i class="ri-map-pin-line"></i>
+
+                                    <h3 class="location__title">
+                                        Russia
+                                    </h3>
+                                </a>
+                            </div>
+                        </article>
+
+                        <article class="interesting__card">
+                            <img src="assets/img/bg_interest-3.jpg" alt="" class="card__img">
+
+                            <div class="card__about">
+                                <h1 class="card__title">
+                                    Grand Canyon
+                                </h1>
+
+                                <a href="#" class="location" id="location">
+                                    <i class="ri-map-pin-line"></i>
+
+                                    <h3 class="location__title">
+                                        Texas
+                                    </h3>
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+
+                <!--==================== QUOTE ====================-->
+                <section class="main__quote">
+                    <div class="quotes__data">
+                        <h1 class="quote__title">
+                            Цитаты дня
+                        </h1>
+
+                        <button class="quote__refresh">
+                            <i class="ri-refresh-line bi"></i>
+                        </button>
+                    </div>
+
+                    <article class="quote">
+                        <img src="assets/img/bg_quote-1.jpg" alt="" class="quote__img">
+
+                        <div class="quote__data">
+                            <p class="quote__description">
+                                Если тебе тяжело, значит ты поднимаешься в гору. Если тебе легко, значит ты летишь в
+                                пропасть.
+                            </p>
+
+                            <!-- <h3 class="quote__title">
+                                Генри Форд
+                            </h3> -->
+
+                            <button class="quote__favorite">
+                                <i class="ri-heart-line"></i>
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="quote">
+                        <img src="assets/img/bg_quote-2.jpg" alt="" class="quote__img">
+
+                        <div class="quote__data">
+                            <p class="quote__description">
+                                Если проигравший улыбается, победитель теряет вкус победы.
+                            </p>
+
+                            <!-- <h3 class="quote__title">
+                                *******
+                            </h3> -->
+
+                            <button class="quote__favorite">
+                                <i class="ri-heart-fill active"></i>
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="quote">
+                        <img src="assets/img/bg_quote-3.jpg" alt="" class="quote__img">
+
+                        <div class="quote__data">
+                            <p class="quote__description">
+                                Глупо не общаться с человеком, который тебе дорог. И неважно, что случилось. Его в любой
+                                момент может не стать. Представляешь? Навсегда. И ничего не вернёшь.
+                            </p>
+
+                            <!-- <h3 class="quote__title">
+                                *******
+                            </h3> -->
+
+                            <button class="quote__favorite">
+                                <i class="ri-heart-line"></i>
+                            </button>
+                        </div>
+                    </article>
+                </section>
+
+                <!--==================== Poster ====================-->
+                <section class="main__poster swiper">
+                    <div class="swiper-wrapper">
+                        <article class="poster swiper-slide">
+                            <img src="assets/img/bg_reklama-1.jpg" alt="" class="poster__img">
+
+                            <div class="poster__title">
+                                <h1 class="text__title">
+                                    Название заголовка
+                                </h1>
+                            </div>
+
+                            <div class="poster__description">
+                                <p class="text__description">
+                                    Описание постера
+                                </p>
+                            </div>
+
+                            <a href="#" class="poster__button">
+                                Перейти
+                            </a>
+                        </article>
+
+                        <article class="poster swiper-slide">
+                            <img src="assets/img/bg_reklama-2.jpg" alt="" class="poster__img">
+
+                            <div class="poster__title">
+                                <h1 class="text__title">
+                                    Название заголовка
+                                </h1>
+                            </div>
+
+                            <div class="poster__description">
+                                <p class="text__description">
+                                    Описание постера
+                                </p>
+                            </div>
+
+                            <a href="#" class="poster__button">
+                                Перейти
+                            </a>
+                        </article>
+
+                        <article class="poster swiper-slide">
+                            <img src="assets/img/bg_reklama-3.jpg" alt="" class="poster__img">
+
+                            <div class="poster__title">
+                                <h1 class="text__title">
+                                    Название заголовка
+                                </h1>
+                            </div>
+
+                            <div class="poster__description">
+                                <p class="text__description">
+                                    Описание постера
+                                </p>
+                            </div>
+
+                            <a href="#" class="poster__button">
+                                Перейти
+                            </a>
+                        </article>
+
+                        <article class="poster swiper-slide">
+                            <img src="assets/img/bg_reklama-4.jpg" alt="" class="poster__img">
+
+                            <div class="poster__title">
+                                <h1 class="text__title">
+                                    Название заголовка
+                                </h1>
+                            </div>
+
+                            <div class="poster__description">
+                                <p class="text__description">
+                                    Описание постера
+                                </p>
+                            </div>
+
+                            <a href="#" class="poster__button">
+                                Перейти
+                            </a>
+                        </article>
+
+                        <article class="poster swiper-slide">
+                            <img src="assets/img/bg_reklama-5.jpg" alt="" class="poster__img">
+
+                            <div class="poster__title">
+                                <h1 class="text__title">
+                                    Название заголовка
+                                </h1>
+                            </div>
+
+                            <div class="poster__description">
+                                <p class="text__description">
+                                    Описание постера
+                                </p>
+                            </div>
+
+                            <a href="#" class="poster__button">
+                                Перейти
+                            </a>
+                        </article>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </section>
+            </section>
+        </main>
+
+        <!--==================== Side__content ====================-->
+        <div class="side__content">
+            <div class="my__account">
+                <img src="assets/img/avatar.jpg" alt="" class="account__img">
+                <div class="account__data">
+                    <h1 class="account__title">Hari</h1>
+                    <p class="account__description">Новостной архивщик</p>
+                </div>
+            </div>
+            <div class="calendar__wrapper">
+                <div class="calendar-title">
+                    <span class="prev-next_btn">
+                        <svg class="icon"  id="prev">
+                            <use xlink:href="assets/img/icon/icons.svg#prev"></use>
+                        </svg>
+                    </span>
+                    <p class="current-date">October 2022</p>
+                    <span class="prev-next_btn">
+                        <svg class="icon" id="next">
+                            <use xlink:href="assets/img/icon/icons.svg#next"></use>
+                        </svg>
+                    </span>
+                </div>
+                <div class="calendar">
+                    <ul class="weeks">
+                        <li>Mo</li>
+                        <li>Tu</li>
+                        <li>We</li>
+                        <li>Th</li>
+                        <li>Fr</li>
+                        <li>Sa</li>
+                        <li>Su</li>
+                    </ul>
+                    <ul class="days">
+                        <!-- <li class="inactive">26</li>
+                        <li class="inactive">27</li>
+                        <li class="inactive">28</li>
+                        <li class="inactive">29</li>
+                        <li class="inactive">30</li>
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li class="active">4</li>
+                        <li>5</li>
+                        <li>6</li>
+                        <li>7</li>
+                        <li>8</li>
+                        <li>9</li>
+                        <li>10</li>
+                        <li>11</li>
+                        <li>12</li>
+                        <li>13</li>
+                        <li>14</li>
+                        <li>15</li>
+                        <li>16</li>
+                        <li>17</li>
+                        <li>18</li>
+                        <li>19</li>
+                        <li>20</li>
+                        <li>21</li>
+                        <li>22</li>
+                        <li>23</li>
+                        <li>24</li>
+                        <li>25</li>
+                        <li>26</li>
+                        <li>27</li>
+                        <li>28</li>
+                        <li>29</li>
+                        <li>30</li>
+                        <li>31</li>
+                        <li class="inactive">1</li>
+                        <li class="inactive">2</li>
+                        <li class="inactive">3</li>
+                        <li class="inactive">4</li>
+                        <li class="inactive">5</li>
+                        <li class="inactive">6</li>
+                        <li class="inactive">7</li> -->
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
