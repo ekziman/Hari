@@ -381,7 +381,7 @@ h6 {
     color: #404040;
 }
 
-/* .quote .quote__title {
+.quote .quote__title {
     position: absolute;
     font-family: 'Lato';
     font-style: italic;
@@ -391,7 +391,7 @@ h6 {
     color: #404040;
     bottom: 0px;
     right: 50px;
-} */
+}
 
 .quote__favorite {
     position: absolute;
@@ -506,7 +506,7 @@ h6 {
 .side__content {
     width: 304px;
     height: 100%;
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
 }
 /* account */
 .my__account {
@@ -542,13 +542,11 @@ h6 {
 /* Calendar */
 .calendar__wrapper {
     position: relative;
-    width: 283px;
     height: 320px;
     background: #FAFAFA;
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
     box-shadow: 0px 0.661972px 1.32394px rgba(0, 14, 51, 0.25);
     border-radius: 10px;
-    margin: auto;
     margin-top: 51px;
     justify-content: center;
     text-align: center;
@@ -597,6 +595,7 @@ h6 {
 .calendar ul {
     display: flex;
     flex-wrap: wrap;
+    list-style: none;
     text-align: center;
 }
 
@@ -659,4 +658,67 @@ h6 {
 }
 .calendar li {
     width: calc(100% / 7);
+}
+
+
+/* My Schedule */
+.schedule__wrapper {
+    margin-top: 37px;
+}
+
+.schedule__data .schedule__title {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.01em;
+    color: #404040;
+    margin-bottom: 21px;   
+}
+
+.schedule__notes .my-note {
+    margin-top: 16px;
+    height: 88px;
+    background: #FFFFFF;
+    border: 1px solid #D0D0D0;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+}
+.schedule__notes .my-note img {
+    width: 80px;
+    height: 69px;
+    border-radius: 10px;
+    margin-left: 9px;
+}
+.note__data {
+    color: #404040;
+    margin-left: 27px;    
+}
+.note__data .note__title {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 19px;
+    letter-spacing: 0.01em;
+}
+.note__data .note__date {
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+}
+.note__data .note__date svg{
+    width: 20px;
+    height: 20px;
+}
+.note__data .note__date span{
+    margin-left: 5px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    line-height: 14px;
+    color: #7D7D7D;
+    margin-left: 5px;
 }
